@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.Card-text> {
+    font-family: "Cinzel", serif;
+}
+.hero{
+    background-image:url("./assets/assets/home/chef-service.jpg");
+    height:572px;
+    width:100%
+}
+
+
