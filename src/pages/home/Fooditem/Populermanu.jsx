@@ -17,7 +17,7 @@ const Populermanu = () => {
                     populer.map(item=><Menuitem 
                         key={item._id}
                         item={item}></Menuitem>)
-                }
+                } 
             </div>
         </section>
     );
