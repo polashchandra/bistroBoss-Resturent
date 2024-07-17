@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../provider/Authprovider';
 
 const Navbar = () => {
+    const { user ,logout} = useContext(AuthContext)
+    const handlelogout=()=>{
+        logout()
+        .then(()=>{ })
+        .catch(error=>console.log(error))
+    }
     const navgite = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/menu">Our Manu</Link></li>
         <li><Link to="/shop">Our Shop</Link></li>
-        <li><Link to="/login">Login</Link></li>
         <li><Link to="/signup">signup</Link></li>
+        {
+            user ? <>
+                <button onClick={handlelogout} className="btn btn-outline btn-accent px-6 items-center">logOut</button>
+            </> :
+                <>
+                    <li><Link to="/login">Login</Link></li>
+
+                </>
+        }
 
 
     </>

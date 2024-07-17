@@ -7,6 +7,9 @@ import Manu from "../pages/Manu/manu/Manu";
 import Ourshop from "../pages/Ourshop/Ourshop";
 import Login from "../pages/home/Login/Login";
 import SignUp from "../pages/home/Login/SignUp";
+import Privateroute from "./Privateroute";
+import Secret from "../sharefils/Secret";
+
 
 
 
@@ -34,6 +37,10 @@ export  const Router = createBrowserRouter([
         {
           path:'/signup',
           element:<SignUp></SignUp>
+        },
+        {
+          path:"/secret",
+          element:<Privateroute><Secret></Secret></Privateroute>
         }
       ],
     },
