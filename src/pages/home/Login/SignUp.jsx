@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../../provider/Authprovider';
 import { Link } from 'react-router-dom';
+import Sociallogin from '../../../component/sociallogin/Sociallogin';
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -76,6 +77,7 @@ const SignUp = () => {
                             </div>
                         </form>
                         <p className='text-center'><small>Already have an account? <Link to="/login">Login here</Link></small></p>
+                        <Sociallogin></Sociallogin>
                     </div>
                 </div>
             </div>

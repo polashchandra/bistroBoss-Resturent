@@ -6,6 +6,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 import Swal from 'sweetalert2'
+import Sociallogin from '../../../component/sociallogin/Sociallogin';
 const Login = () => {
     const chaptchaRef = useRef(null);
     const [disblat, setdisablat] = useState(true)
@@ -105,6 +106,7 @@ const Login = () => {
                                 </div>
                             </form>
                             <p className='text-center'><small>new here ? <Link to="/signup">create a new account</Link></small></p>
+                        <Sociallogin></Sociallogin>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
         <li><Link to="/shop">Our Shop</Link></li>
         <li><Link to="/signup">signup</Link></li>
         <li><Link to="/secret">Secret</Link></li>
-        <li><Link to="/">
+        <li><Link to="/deashbord/cart">
             <button className="btn bg-none">
                 <FaCartShopping></FaCartShopping>
                 <div className="badge badge-secondary">+99</div>
